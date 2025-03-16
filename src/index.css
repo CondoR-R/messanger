@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: #eee;
+}
+
+button,
+input {
+  font-family: sans-serif;
+}
+
+div,
+header {
+  border-radius: 1.2rem;
+}
