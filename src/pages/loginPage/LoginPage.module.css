@@ -37,6 +37,7 @@
   outline: none;
   padding: 1rem;
   font-size: 1.4rem;
+  border: 0.2rem solid #eee;
 }
 
 .passwordGroup {
@@ -45,6 +46,7 @@
   display: grid;
   grid-template-columns: 6fr 1fr;
   overflow: hidden;
+  border: 0.2rem solid #eee;
 }
 
 .passwordInput {
@@ -96,4 +98,15 @@
   cursor: pointer;
   text-decoration: underline;
   color: #2279ab;
+}
+
+.empty {
+  border: 0.2rem solid rgb(205, 1, 1);
+}
+
+.emptyMessage {
+  color: rgb(205, 1, 1);
+  font-size: 1.2rem;
+  height: 1.4rem;
+  margin-bottom: 2rem;
 }

@@ -10,6 +10,7 @@ function Layout() {
       <Header />
       <main>
         <LoginPage />
+        {/* <MainPage /> */}
       </main>
     </div>
   );
