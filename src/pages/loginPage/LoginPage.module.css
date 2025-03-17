@@ -1,0 +1,99 @@
+.enviroment {
+  position: relative;
+  height: 100%;
+}
+
+.loginBox {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 5rem 2rem;
+  width: 25vw;
+}
+
+.title {
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.label {
+  font-size: 1.6rem;
+}
+
+.loginInput {
+  border: none;
+  border-radius: 1.2rem;
+  background-color: #eee;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.passwordGroup {
+  border-radius: 1.2rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  overflow: hidden;
+}
+
+.passwordInput {
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.passwordBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.passwordImg {
+  width: 2rem;
+}
+
+.buttonsGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submitBtn {
+  border: none;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  background-color: #2d9cdb;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #2279ab;
+}
+
+.swapSpan {
+  color: #444;
+  margin-right: 1rem;
+}
+
+.swapBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #2279ab;
+}
