@@ -4,11 +4,14 @@
   padding-top: 1.5rem;
   background-color: var(--bg-color);
   height: 100%;
+  display: grid;
+  grid-template-rows: 3.6rem 1fr;
+  row-gap: 2rem;
+  overflow: hidden;
 }
 
 .header {
   padding: 0 2rem;
-  margin-bottom: 2rem;
 }
 
 .searchLabel {
@@ -34,5 +37,6 @@
 }
 
 .chats {
-  display: grid;
+  height: 100%;
+  overflow-y: auto;
 }

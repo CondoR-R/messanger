@@ -1,3 +1,4 @@
+import ChatCard from "../chatCard/ChatCard";
 import style from "./ChatsList.module.css";
 
 function ChatsList() {
@@ -16,7 +17,34 @@ function ChatsList() {
           </label>
         </form>
       </div>
-      <div className={style.chats}>чаты</div>
+      <div className={style.chats}>
+        <ChatCard isActive={false} />
+        <ChatCard isActive={true} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+        <ChatCard isActive={false} />
+      </div>
     </div>
   );
 }

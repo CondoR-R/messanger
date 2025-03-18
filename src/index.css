@@ -1,5 +1,11 @@
 @import url("./variables.css");
 
+:root {
+  --top-down-height: 6rem;
+  --scroll-background: transparent;
+  --scroll-color: #555;
+}
+
 * {
   margin: 0;
   padding: 0;

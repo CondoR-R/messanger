@@ -1,0 +1,35 @@
+@import url("../../variables.css");
+
+.card {
+  padding: 1rem;
+  border-radius: 0;
+  background-color: var(--secondary-bg-color);
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  background-color: var(--gap-color);
+}
+
+.active {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+.active:hover {
+  background-color: var(--main-color-dark);
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 1.9rem;
+  overflow: hidden;
+}
+
+.message {
+  height: 1.9rem;
+  overflow: hidden;
+}
