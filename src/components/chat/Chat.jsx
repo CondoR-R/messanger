@@ -1,3 +1,4 @@
+import Message from "../message/Message";
 import style from "./Chat.module.css";
 
 function Chat() {
@@ -9,7 +10,44 @@ function Chat() {
       </div>
 
       {/* зона чата */}
-      <div className={style.chat}></div>
+      <div className={style.chat}>
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+        <Message type={"you"} />
+        <Message type={"interlocutor"} />
+      </div>
 
       {/* нижняя часть */}
       <div className={style.sendBox}>

@@ -1,0 +1,16 @@
+.enviroment {
+  height: 100vh;
+  background-color: #eee;
+  color: #2d9cdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.big {
+  font-size: 20rem;
+}
+
+.small {
+  font-size: 4rem;
+}

@@ -1,0 +1,32 @@
+.messageBox {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 90%;
+  padding: 0.7rem 1rem;
+}
+
+.interlocutor {
+  background-color: #2d9cdb;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.you {
+  background-color: #2279ab;
+  color: #fafafa;
+  align-self: flex-end;
+}
+
+.text {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.date {
+  font-size: 1.2rem;
+  text-align: right;
+}

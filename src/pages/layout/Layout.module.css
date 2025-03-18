@@ -4,3 +4,9 @@
   grid-template-rows: 7rem 1fr;
   row-gap: 0.5rem;
 }
+
+.main {
+  display: flex;
+  flex-grow: 1; /* Позволит растягиваться, не зависеть от высоты */
+  overflow: hidden; /* Убираем ненужный скролл */
+}
