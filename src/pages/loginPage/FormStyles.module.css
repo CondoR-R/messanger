@@ -1,6 +1,9 @@
+@import url("../../variables.css");
+
 .enviroment {
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .loginBox {
@@ -8,7 +11,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: 5rem 2rem;
   width: 25vw;
 }
@@ -33,20 +36,20 @@
 .loginInput {
   border: none;
   border-radius: 1.2rem;
-  background-color: #eee;
+  background-color: var(--secondary-color);
   outline: none;
   padding: 1rem;
   font-size: 1.4rem;
-  border: 0.2rem solid #eee;
+  border: 0.2rem solid var(--secondary-color);
 }
 
 .passwordGroup {
   border-radius: 1.2rem;
-  background-color: #eee;
+  background-color: var(--secondary-color);
   display: grid;
   grid-template-columns: 6fr 1fr;
   overflow: hidden;
-  border: 0.2rem solid #eee;
+  border: 0.2rem solid var(--secondary-color);
 }
 
 .passwordInput {
@@ -77,18 +80,18 @@
   border: none;
   padding: 1rem;
   border-radius: 1.2rem;
-  background-color: #2d9cdb;
-  color: #fff;
+  background-color: var(--main-color);
+  color: var(--bg-color);
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .submitBtn:hover {
-  background-color: #2279ab;
+  background-color: var(--main-color-dark);
 }
 
 .swapSpan {
-  color: #444;
+  color: var(--text-color-light);
   margin-right: 1rem;
 }
 
@@ -97,15 +100,15 @@
   background-color: transparent;
   cursor: pointer;
   text-decoration: underline;
-  color: #2279ab;
+  color: var(--main-color-dark);
 }
 
 .empty {
-  border: 0.2rem solid rgb(205, 1, 1);
+  border: 0.2rem solid var(--danger-color);
 }
 
 .emptyMessage {
-  color: rgb(205, 1, 1);
+  color: var(--danger-color);
   font-size: 1.2rem;
   height: 1.4rem;
   margin-bottom: 2rem;

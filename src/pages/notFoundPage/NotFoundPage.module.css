@@ -1,7 +1,9 @@
+@import url("../../variables.css");
+
 .enviroment {
   height: 100vh;
-  background-color: #eee;
-  color: #2d9cdb;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
   display: flex;
   flex-direction: column;
   justify-content: center;

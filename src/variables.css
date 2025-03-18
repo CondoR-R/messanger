@@ -1,0 +1,16 @@
+:root {
+  --main-color: #2d9cdb;
+  --main-color-dark: #2279ab;
+
+  --secondary-color: #eee;
+
+  --bg-color: #fff;
+  --secondary-bg-color: #fafafa;
+
+  --gap-color: #eee;
+
+  --text-color: #000;
+  --text-color-light: #444;
+
+  --danger-color: rgb(223, 1, 1);
+}
