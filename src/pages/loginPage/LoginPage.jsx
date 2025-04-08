@@ -1,14 +1,42 @@
 import { useState } from "react";
 import style from "./FormStyles.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { logIn } from "../loginPage/LoginPageSlice";
+import { useSelector } from "react-redux";
 
 function LoginPage() {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
+  const [users, setUsers] = useState([]);
 
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   const [isEmpty, setIsEmpty] = useState(false);
+  const [isWrongUser, setIsWrongUser] = useState(false);
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const isLogin = useSelector((state) => state.loginPage.isLogin);
+  if (isLogin) {
+    navigate("/", { replace: true });
+  }
+
+  /**Симуляция работы с сервером
+   * так как в данный момент "базой данных" является json файл проверка
+   * авторизации, выполняемая на стороне сервера, выполняется внутри функции
+   * отправки. Получение данных происходит при запуске страницы логина
+   */
+  useEffect(() => {
+    const getUsers = async () => {
+      const res = await fetch("http://localhost:9000/accounts");
+      const usersFromServer = await res.json();
+      setUsers(usersFromServer);
+    };
+    getUsers();
+  }, []);
 
   const handleChangeShowPassword = () => {
     setIsShowPassword((isShow) => !isShow);
@@ -17,11 +45,13 @@ function LoginPage() {
   const handleChangeLogin = (e) => {
     setLogin(e.target.value);
     setIsEmpty(false);
+    setIsWrongUser(false);
   };
 
   const handleChangePassword = (e) => {
     setPassword(e.target.value);
     setIsEmpty(false);
+    setIsWrongUser(false);
   };
 
   const submitForm = (e) => {
@@ -38,7 +68,17 @@ function LoginPage() {
       password,
     };
 
-    console.log("Отправка данных на сервер для проверки данных", user);
+    // проверка на правильность данных аккаунта
+    const userFromServer = users.find(
+      (u) => u.login === user.login && u.password === user.password
+    );
+
+    if (userFromServer) {
+      dispatch(logIn(userFromServer));
+      navigate("/", { replace: true });
+    } else {
+      setIsWrongUser(true);
+    }
   };
 
   return (
@@ -90,6 +130,7 @@ function LoginPage() {
           {/* предупреждения */}
           <div className={style.emptyMessage}>
             {isEmpty && <p>Поля не должны быть пустыми!</p>}
+            {isWrongUser && <p>Неверные логин и/или пароль</p>}
           </div>
 
           {/* кнопки отравки и смены режима */}

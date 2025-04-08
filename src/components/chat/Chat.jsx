@@ -2,6 +2,10 @@ import Message from "../message/Message";
 import style from "./Chat.module.css";
 
 function Chat() {
+  const sendMessage = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={style.chatBox}>
       {/* верхняя часть */}
@@ -51,7 +55,7 @@ function Chat() {
 
       {/* нижняя часть */}
       <div className={style.sendBox}>
-        <form action="#" className={style.sendForm}>
+        <form onSubmit={sendMessage} action="#" className={style.sendForm}>
           <label htmlFor="messageInput" className={style.messageLabel}>
             <input
               type="text"
@@ -60,7 +64,9 @@ function Chat() {
               className={style.messageInput}
             />
           </label>
-          <button className={style.sendButton}>Отправить</button>
+          <button type="submit" className={style.sendButton}>
+            Отправить
+          </button>
         </form>
       </div>
     </div>

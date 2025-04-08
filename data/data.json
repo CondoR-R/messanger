@@ -1,0 +1,37 @@
+{
+  "accounts": [
+    {
+      "name": "Иван",
+      "lastName": "Иванов",
+      "login": "ivan",
+      "password": "ivan",
+      "id": 1
+    },
+    {
+      "name": "Петр",
+      "lastName": "Петров",
+      "login": "peter",
+      "password": "peter",
+      "id": 2
+    }
+  ],
+  "chats": [
+    {
+      "id": 1,
+      "userOneId": 1,
+      "userTwoId": 2,
+      "messeges": [
+        {
+          "text": "Привет! Как Дела?",
+          "date": 1742893171739,
+          "userId": 1
+        },
+        {
+          "text": "Привет! Да все ок)",
+          "date": 1742894171739,
+          "userId": 2
+        }
+      ]
+    }
+  ]
+}
